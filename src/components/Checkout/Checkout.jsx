@@ -16,7 +16,7 @@ import AddressForm from "./AddressForm/AddressForm";
 const steps = ["Shipping address", "Payment details"];
 
 const Checkout = () => {
-  const [activeStep, setActiveStep] = useState(2);
+  const [activeStep, setActiveStep] = useState(0);
   const classes = useStyles();
   const Form = () => (activeStep === 0 ? <AddressForm /> : <PaymentForm />);
   const Confirmation = () => <div>Confirmation</div>;
@@ -24,7 +24,7 @@ const Checkout = () => {
     <>
       <div className={classes.toolbar} />
       <main className={classes.layout}>
-        <Paper>
+        <Paper className={classes.paper}>
           <Typography variant={"h4"} align={"center"}>
             Checkout
           </Typography>
