@@ -57,7 +57,7 @@ const Index = () => {
             />
           </Route>
           <Route exact path={"/checkout"}>
-            <Checkout />
+            <Checkout cart={cart} />
           </Route>
         </Switch>
       </div>
