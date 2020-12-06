@@ -24,6 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://automedon.github.io/E-Commrece-Shop/",
   "eslintConfig": {
     "extends": [
       "react-app",

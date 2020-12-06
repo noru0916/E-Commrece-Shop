@@ -74,7 +74,7 @@
     (l.o = function (e, r) {
       return Object.prototype.hasOwnProperty.call(e, r);
     }),
-    (l.p = "/");
+    (l.p = "/E-Commrece-Shop/");
   var p = (this.webpackJsonpshope = this.webpackJsonpshope || []),
     f = p.push.bind(p);
   (p.push = r), (p = p.slice());
@@ -82,4 +82,4 @@
   var a = f;
   t();
 })([]);
-//# sourceMappingURL=runtime-main.7f917f92.js.map
+//# sourceMappingURL=runtime-main.e4483b3d.js.map
