@@ -1,8 +1,8 @@
 import React from "react";
-import { Typography, Button, Divider } from "@material-ui/core";
+import { Button, Divider, Typography } from "@material-ui/core";
 import {
-  Elements,
   CardElement,
+  Elements,
   ElementsConsumer,
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js/pure";
@@ -16,6 +16,7 @@ const PaymentForm = ({
   backStep,
   onCaptureCheckout,
   nextStep,
+  timeout,
 }) => {
   const handleSubmit = async (e, elements, stripe) => {
     e.preventDefault();
@@ -53,6 +54,8 @@ const PaymentForm = ({
         },
       };
       onCaptureCheckout(checkoutToken.id, orderData);
+
+      timeout();
       nextStep();
     }
   };
